@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+
+<h1>Álcool ou Gasolina?</h1>
+
+<script>
+  function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  var tanque = 40;
+  document.write("O carro tem um tamque de " + tanque + " litros de gasolina");
+  pulaLinha();
+
+  var distancia = 480;
+  document.write("A distancia percorida foi de " + distancia + " Km");
+  pulaLinha();
+
+  document.write("O gasto de gasolina foi de " + distancia / tanque + " km/L");
+  pulaLinha();
+
+  tanque = 40;
+  document.write("O carro tem um tamque de " + tanque + " litros de álcool");
+  pulaLinha();
+
+  distancia = 300;
+  document.write("A distancia percorida foi de " + distancia + " Km");
+  pulaLinha();
+
+  document.write("O gasto de álcool foi de " + distancia / tanque + " km/L");
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8" />
+
+<script>
+  //O problema das gerações.
+  function pulaLinha() {
+    document.write("<br>");
+  }
+  function mostra(frase) {
+    document.write(frase);
+  }
+
+  mostra("Quantos gerações foram passadas entre 1500 e 2022? ");
+  pulaLinha();
+
+  var anosPassados = 2022 - 1500;
+  mostra(
+    "Entre 1500 e 2022 foram passadas " +
+      Math.round(anosPassados / 28) +
+      " gerações."
+  );
+</script>

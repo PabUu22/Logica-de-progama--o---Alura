@@ -1,0 +1,28 @@
+<meta charset="UTF-8" />
+<script>
+  function pulaLinha() {
+    document.write("<br>");
+  }
+  function mostra(frase) {
+    document.write(frase);
+  }
+
+  var linda = 12;
+  mostra("Linda tem " + linda + " anos de idade.");
+  pulaLinha();
+
+  var guaciara = 15;
+  mostra("Guaciara tem " + guaciara + " anos de idade.");
+  pulaLinha();
+
+  var perola = 13;
+  mostra("Pérola tem " + perola + " anos de idade.");
+  pulaLinha();
+
+  var media = (linda + guaciara + perola) / 3;
+
+  mostra(
+    "A média das idade de linda, Guaciara e Pérola é igual a " +
+      Math.round(media)
+  );
+</script>
