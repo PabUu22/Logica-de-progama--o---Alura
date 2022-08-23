@@ -1,2 +1,3 @@
 # Logica de progamação - Alura
- Teste feito durantes as atividade e aulas 
+
+Teste feito durantes as atividades e aulas
