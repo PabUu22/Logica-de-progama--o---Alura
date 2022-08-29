@@ -1,0 +1,37 @@
+<meta charset="UTF-8" />
+<script>
+  //Funções em JavaScript
+  function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+  }
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  //Variáveis em JavaScript
+  var pPassado = parseInt(prompt("Digite sua pontuação do ano passado:"));
+  var vitorias = parseInt(prompt("Entre com numero de vitorias."));
+  var empates = parseInt(prompt("Entre com numero de empates."));
+  var pontos = vitorias * 3 + empates;
+
+  mostra("O numero de pontos é " + pontos);
+
+  //Condições em JavaScript
+  if (pontos > pPassado) {
+    mostra("Sua pontuação foi maior que a do ano passado!");
+    mostra("Seu time está bem!!!");
+  }
+
+  if (pontos < pPassado) {
+    mostra("Sua pontuação foi baixa em relação ao ano passado!");
+    mostra("Seu time está mal!!!");
+  }
+
+  if (pontos == pPassado) {
+    mostra("Sua pontuação está igual do ano passado");
+  }
+
+  mostra("Fim");
+</script>
