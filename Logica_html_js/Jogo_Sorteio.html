@@ -1,0 +1,29 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function sorteio(n) {
+    Math.round(Math.random() * n);
+  }
+
+  var numeroPensado = sorteio(10);
+  var chute = parseInt(prompt("Pense em um número e digite: "));
+
+  if (chute == numeroPensado) {
+    mostra("Você acertou!!!");
+  } else {
+    if (chute > numeroPensado) {
+      mostra("Você errou! Seu chute é maior que o número pensado!");
+    } else {
+      mostra("Você errou! Seu chute é menor que o número pensado!");
+    }
+  }
+</script>
