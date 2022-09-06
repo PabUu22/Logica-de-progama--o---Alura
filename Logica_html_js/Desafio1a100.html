@@ -1,0 +1,22 @@
+<meta charset="UTF-8" />
+<script>
+  function pulaLinha() {
+    document.write("<hr><br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  var controlador = 1;
+  var resultado = 0;
+  while (controlador <= 100) {
+    resultado = controlador % 2;
+    if (resultado == 0) {
+      mostra("número " + controlador);
+    } else {
+    }
+    controlador = controlador + 1;
+  }
+</script>
