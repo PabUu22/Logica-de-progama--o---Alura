@@ -10,18 +10,17 @@
   function verifica() {
     var achou = false;
     for (posiçao = 0; posiçao < segredos.length; posiçao++) {
-      if (segredo == input.value) {
+      if (input.value == segredos[posiçao]) {
         alert("Você acertou!!!");
         achou = true;
         break;
       }
-      if (achou == false) {
-        alert("Você errou!!!");
-      }
-
-      input.value = "";
-      input.focus();
     }
+    if (achou == false) {
+      alert("Você errou!!!");
+    }
+    input.value = "";
+    input.focus();
   }
 
   var button = document.querySelector("button");
