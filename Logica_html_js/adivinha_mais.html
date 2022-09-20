@@ -1,31 +1,32 @@
 <meta charset="UTF-8" \ />
 <input />
-<button>Compare com meu segredo</button>
+<button id="comparar">Compare com meu segredo</button>
+<button id="trocar">Trocar de valores</button>
 
 <script>
   function sorteia() {
     return Math.round(Math.random() * 10);
   } // Sorteio aleatorio de números
-  function sorteiaNumeros(quatidade) {
+  function sorteiaNumeros(quantidade) {
     var segredos = [];
 
     var numero = 1;
 
-    while (numero < quantidade) {
+    while (numero <= quantidade) {
       var numeroAleatorio = sorteia();
 
       var achou = false;
 
-      if (numeroAleatorio != 0) {
-        for (var posiçao = 1; posiçao < segredos.length; posiçao++) {
+      if (numeroAleatorio !== 0) {
+        for (var posicao = 0; posicao < segredos.length; posicao++) {
           if (segredos[posicao] == numeroAleatorio) {
             achou = true;
             break;
           }
         }
-        if (achou == true) {
-          alert("Você acertou");
-          numerro++;
+        if (achou == false) {
+          segredos.push(numeroAleatorio);
+          numero++;
         }
       }
     }
@@ -54,7 +55,11 @@
     input.value = "";
     input.focus();
   }
+  var butaoTrocar = document.getElementById("trocar");
+  butaoTrocar.onclick = () => {
+    segredos = sorteiaNumeros(3);
+  };
 
-  var button = document.querySelector("button");
-  button.onclick = verifica;
+  var botaoComparar = document.getElementById("comparar");
+  botaoComparar.onclick = verifica;
 </script>
